@@ -8,9 +8,39 @@
         &:nth-child(1){
           
             color: rgba(27, 28, 30, 0.4);
+            &:hover{
+                color: rgba(125, 139, 167, 0.4);
+
+            }
         }
         &:nth-child(2){
            
             color: #26272d;
+
+            &:hover{
+                color: #8f92a5;
+
+            }
+        }
+    }
+
+    .info__btn{
+        width: 132px;
+        height: 42px;
+        font-size: 16px;
+        color: #fff;
+        position: relative;
+            padding: 0px 0 0 15px;
+
+        &::before{
+            content:"";
+            position: absolute;
+            background-image: url("../assets/img/header/apple.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            top: 8px;
+            left: 16px;
+            width: 17px;
+            height: 21px;
         }
     }

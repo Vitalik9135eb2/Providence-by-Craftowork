@@ -5,7 +5,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(".././assets/img/header/header-bg2.png");
+    background-image: url(".././assets/img/header/header-bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
     position: relative;
@@ -35,6 +35,46 @@
         &-img{
             width: 150px;
             height: 15px;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px red;
+        margin: 116px 0 0 0 ;
+    }
+
+    &__title{
+        font-size: 61px;
+    }
+
+    &__text{
+        text-align: center;
+        display: block;
+        max-width: 780px;
+        line-height: 1.4;
+        margin: 40px 0 0 0;
+    }
+
+    &__content-btn{
+        width: 205px;
+        height: 50px;
+        margin: 62px 0 0 0;
+        padding: 0 0 0 16px;
+        position: relative;
+        &::before{
+            content:"";
+            position: absolute;
+            background-image: url("../assets/img/header/Play.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            top: 15px;
+            left: 30px;
+            width: 17px;
+            height: 21px;
         }
     }
 }
