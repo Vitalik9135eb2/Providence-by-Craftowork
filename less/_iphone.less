@@ -1,0 +1,56 @@
+// main: ./../main.less
+
+
+.iphone{
+    
+    width: 100%;
+    background-image: url("../assets/img/iphone/iPhone6.png");
+    background-size: 765px;
+    background-repeat: no-repeat;
+    background-position: 0 43px;
+    display: flex;
+    justify-content: flex-end;
+
+    &__content{
+        margin: 265px 220px 235px 0;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        max-width: 470px;
+    }
+    &__title{
+        font-size: 42px;
+        max-width: 230px;
+    }
+    &__btns{
+        margin: 75px 0 23px 10px;
+    }
+    &__link{
+        background-color:#267df4;
+        font-size: 16px;
+        color: #fff;
+        padding: 14px 40px 13px 26px;
+        border-radius: 21px;
+        margin: 0 20px 0 0;
+        position: relative;
+        &::after{
+            content: " ";
+            position: absolute;
+            background-image:url("../assets/img/iphone/Arrow.png");
+            background-repeat:no-repeat;
+            background-size: 100%;
+            width: 14px;
+            height: 12px;
+            bottom: 15px;
+            right: 11px;
+        }
+    }
+
+    &__btn{
+        padding: 14px 31px 15px 32px;
+        opacity: .1;
+
+    }
+
+
+}   
